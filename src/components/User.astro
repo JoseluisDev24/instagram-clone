@@ -1,10 +1,21 @@
+---
+    interface Props{
+        avatar: string;
+        username: string;
+        name: string;
+        opcion: boolean;
+    }
+    const { avatar, username, name} = Astro.props; 
+---
 <div class="flex w-3/12 h-20 bg-white">
     <div class="flex items-center justify-between gap-6 p-4">
-        <img class="rounded-full w-14" src="/img/profile.png" alt="">
+        <img class="rounded-full w-14" src=`${avatar}` alt="">
      <div class="text flex-col">
-        <h5 class="font-bold ">gonzalo_rosano_yt</h5>
-        <p>Gonzalo Rosano</p>
+        <h5 class="font-bold ">{username}</h5>
+        <p>{name}</p>
      </div>
-        <a class="text-cyan-700 font-bold ite" href="">Cambiar</a>
+        <a class="text-cyan-700 font-bold ite" href=""> 
+            <!-- se va a ver una opcion u otra dependiendo si opcion = true or false -->
+        </a>
     </div>
 </div>
