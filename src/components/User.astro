@@ -5,7 +5,7 @@
         name: string;
         opcion: boolean;
     }
-    const { avatar, username, name} = Astro.props; 
+    const { avatar, username, name, opcion } = Astro.props; 
 ---
 <div class="flex w-3/12 h-20 bg-white">
     <div class="flex items-center justify-between gap-6 p-4">
@@ -14,8 +14,9 @@
         <h5 class="font-bold ">{username}</h5>
         <p>{name}</p>
      </div>
-        <a class="text-cyan-700 font-bold ite" href=""> 
-            <!-- se va a ver una opcion u otra dependiendo si opcion = true or false -->
-        </a>
+    
+     <a class="text-cyan-700 font-bold ite" href="">
+        { opcion ? "Cambiar" : "Seguir" }
+    </a>
     </div>
 </div>

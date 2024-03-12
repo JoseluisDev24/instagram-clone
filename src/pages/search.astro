@@ -1,6 +1,13 @@
 ---
+import Navbar from '../components/Navbar.astro';
+import Suggestions from '../components/Suggestions.astro';
 import Layout from '../layouts/Layout.astro';
+
 ---
-<Layout title="Busqueda">
-	
+
+
+<Layout title="Buscar">
+	<Navbar activeTab="search"/> 
+	<Suggestions/>
 </Layout>
+
