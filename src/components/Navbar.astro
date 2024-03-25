@@ -15,27 +15,29 @@
         flex-direction: row;
     }
 </style>
-<div class="bg-white w-1/7 px-6 py-10 flex flex-col justify-between content-between sm:hidden md:flex">
-    <img src="/icons/instagram.svg" class="w-[104px]" alt="">
-    <ul class="flex flex-col gap-8 text-md">
-        <li> 
-            <a class="flex gap-4 {{ activeTab === 'inicio' ? 'font-bold' : '' }}" href="http://localhost:4321/"><img src="/icons/home.svg" alt="Inicio"><p>Inicio</p></a></li>
-        <li> 
-            <a class="flex gap-4 {{ activeTab === 'search' ? 'font-bold' : '' }}" href="http://localhost:4321/search"> <img src="/icons/search.svg" alt="Búsqueda"><p>Búsqueda</p></a></li>
-        <li> 
-            <a class="flex gap-4 {{ activeTab === 'explore' ? 'font-bold' : '' }}" href="http://localhost:4321/explore"> <img src="/icons/explore.svg" alt="Explorar"><p>Explorar</p></a></li>
-        <li> 
-            <a class="flex gap-4 {{ activeTab === 'reels' ? 'font-bold' : '' }}" href="http://localhost:4321/reels"> <img src="/icons/reels.svg" alt="Reels"><p>Reels</p></a></li>
-        <li> 
-            <a class="flex gap-4 {{ activeTab === 'messages' ? 'font-bold' : '' }}" href="http://localhost:4321/messages"> <img src="/icons/messages.svg" alt="Mensajes"><p>Mensajes</p></a></li>
-        <li> 
-            <a class="flex gap-4 {{ activeTab === 'notifications' ? 'font-bold' : '' }}" href="http://localhost:4321/notifications"> <img src="/icons/notifications.svg" alt="Notificaciones"><p>Notificaciones</p></a></li>
-        <li> 
-            <a class="flex gap-4 {{ activeTab === 'create' ? 'font-bold' : '' }}" href="http://localhost:4321/create"> <img src="/icons/create.svg" alt="Crear"><p>Crear</p></a></li>
-        <li>
-            <a class="flex gap-4 {{ activeTab === 'create' ? 'font-bold' : '' }}"><img class="rounded-full size-6" src="img/profile.png" alt=""><p>Perfil</p></a>
-        </li>
-    </ul>
-    <a class="flex gap-4 items-center" href=""><img src="/icons/menu.svg"><p>Más</p></a>
+<div class="border-r-2 w-1/5 px-6 py-10 sm:hidden md:flex">
+    <div class="fixed flex flex-col h-full top-0 justify-around">
+        <img src="/icons/instagram.svg" class="w-[104px]" alt="">
+        <ul class="flex flex-col gap-8 text-md">
+            <li> 
+                <a class=`gap-4 ${ activeTab === 'inicio' ? 'font-bold' : '' }` href="http://localhost:4321/"><img src="/icons/home.svg" alt="Inicio"><p>Inicio</p></a></li>
+            <li>
+                <a class=`gap-4 ${ activeTab === 'search' ? 'font-bold' : '' }` href="http://localhost:4321/search"> <img src="/icons/search.svg" alt="Búsqueda"><p>Búsqueda</p></a></li>
+            <li> 
+                <a class=`gap-4 ${ activeTab === 'explore' ? 'font-bold' : '' }` href="http://localhost:4321/explore"> <img src="/icons/explore.svg" alt="Explorar"><p>Explorar</p></a></li>
+            <li> 
+                <a class=`gap-4 ${ activeTab === 'reels' ? 'font-bold' : '' }` href="http://localhost:4321/reels"> <img src="/icons/reels.svg" alt="Reels"><p>Reels</p></a></li>
+            <li> 
+                <a class=`gap-4 ${ activeTab === 'messages' ? 'font-bold' : '' }` href="http://localhost:4321/messages"> <img src="/icons/messages.svg" alt="Mensajes"><p>Mensajes</p></a></li>
+            <li> 
+                <a class=`gap-4 ${ activeTab === 'notifications' ? 'font-bold' : '' }}` href="http://localhost:4321/notifications"> <img src="/icons/notifications.svg" alt="Notificaciones"><p>Notificaciones</p></a></li>
+            <li> 
+                <a class=`gap-4 ${ activeTab === 'create' ? 'font-bold' : '' }` href="http://localhost:4321/create"> <img src="/icons/create.svg" alt="Crear"><p>Crear</p></a></li>
+            <li>
+                <a class=`gap-4 ${ activeTab === 'create' ? 'font-bold' : '' }`><img class="rounded-full size-6" src="img/profile.png" alt=""><p>Perfil</p></a>
+            </li>
+        </ul>
+        <a class="flex gap-4 items-center" href=""><img src="/icons/menu.svg"><p>Más</p></a>
+    </div>
 
 </div>

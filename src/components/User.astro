@@ -6,17 +6,20 @@
         opcion: boolean;
     }
     const { avatar, username, name, opcion } = Astro.props; 
+
 ---
-<div class="flex w-3/12 h-20 bg-white">
-    <div class="flex items-center justify-between gap-6 p-4">
-        <img class="rounded-full w-14" src=`${avatar}` alt="">
-     <div class="text flex-col">
+<div class="flex h-20 pt-10 w-[250px] mx-auto items-center justify-between ">
+    <div class="flex items-center w-full gap-6">
+        <img class="rounded-full w-11" src=`${avatar}` alt="">
+     <div class="text-sm flex-col">
         <h5 class="font-bold ">{username}</h5>
-        <p>{name}</p>
+        <p class="text-gray-500 font-semibold">{name}</p>
      </div>
     
-     <a class="text-cyan-700 font-bold ite" href="">
+     
+    </div>
+    <a class="text-cyan-700 text-xs font-bold ite" href="">
         { opcion ? "Cambiar" : "Seguir" }
     </a>
-    </div>
 </div>
+
