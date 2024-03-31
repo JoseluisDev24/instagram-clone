@@ -2,25 +2,28 @@
 import User from "./User.astro";
 ---
 
-<div class="flex flex-col">
+<div class="flex flex-col items-center">
   
 
   <div class="w-[250px] mx-16">
     <User avatar="https://unavatar.io/github/GonzaloRosano" username="gonzalo_rosano-yt" name="Gonzalo Rosano" opcion/>
-
-
+  
   <ul>
-
-  <li class="text-sm flex pt-10 justify-between align-middle">
-    <p class="text-gray-500 font-semibold">Sugerencias para ti</p>
-    <a href="">Ver todo</a>
-  </li>
-  <li><User avatar="https://unavatar.io/github/dlaudh" username="victor_rosano" name="Victor Rosano" opcion={false}/></li>
-  <li><User avatar="https://unavatar.io/github/JoseluisDev24" username="joseluis_rosano" name="Joseluis Rosano" opcion={false}/></li>
-  <li><User avatar="https://unavatar.io/github/GonzaloRosano" username="GonzaloRosano" name="Gonzalo Rosano" opcion={false}/></li>
-  <li><User avatar="https://unavatar.io/github/GonzaloRosano" username="GonzaloRosano" name="Gonzalo Rosano" opcion={false}/></li>
+    <li class="text-sm flex pt-10 justify-between align-middle">
+      <p class="text-gray-500 font-semibold">Sugerencias para ti</p>
+      <a href="">Ver todo</a>
+    </li>
+    <li><User avatar="https://unavatar.io/github/dlaudh" username="victor_rosano" name="Victor Rosano" opcion={false}/></li>
+    <li><User avatar="https://unavatar.io/github/JoseluisDev24" username="joseluis_rosano" name="Joseluis Rosano" opcion={false}/></li>
+    <li><User avatar="https://unavatar.io/github/midudev" username="midu_dev" name="Midu" opcion={false}/></li>
+    <li><User avatar="https://unavatar.io/github/freeCodeCamp" username="freeCodeCamp" name="freeCodeCamp" opcion={false}/></li>
   </ul>
   </div>
 
-
+  <div class="w-[250px] pt-10 text-gray-500 text-sm flex flex-col">
+    <p>Información. Ayuda. Prensa. API. Empleo. Privacidad. Condiciones. Ubicaciones. Idiomas. <br> Meta Verified</p>
+    <p class="pt-4">© 2024 INSTAGRAM FROM META</p>
   </div>
+
+
+</div>
